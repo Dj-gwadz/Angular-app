@@ -1,4 +1,4 @@
-# Bright-Quote
+# BRIGHT-QUOTE
 #### By **WYCLIF OUMA**
 ## Description
 This project was generated with [Angular CLI]
