@@ -1,0 +1,7 @@
+<p class="text-primary">Author: {{application.author}} </p>
+<p><i class="fas fa-thumbs-up fa-2x mr-2 text-primary" (click)='addUp(true)'></i> <span class="mr-3">{{application.upvote}}</span> <i class="far fa-thumbs-down fa-2x mr-2 text-danger" (click)='addDown(true)'></i><span>{{application.downvote}}</span> </p>
+<p class="text-success">Posted on {{application.myDate|date}} by {{application.publisher}}</p>
+<p>{{application.myDate|timeCount}} </p>
+<div class="form-group">
+<button type="submit" class=" btn btn-outline-danger" (click)= 'quoteDelete(true)'>Delete Application</button>
+</div>

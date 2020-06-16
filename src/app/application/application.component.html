@@ -1,0 +1,26 @@
+<div class="container">
+    <h1> WELCOME TO MASSIVE APP QUOTES</h1>
+    <p>This is an app that allows you to get quotes from different people around the world. Feel free to add a quote and
+      rate a quote.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let application of application, let i = index'>
+          <div>
+          <p appHighlight *ngIf="loopVote()===application.upvote && application.upvote>0"><i class="fa fa-application-left fa-2x text-dark mr-3"></i> {{application.quote}} </p>
+          <p *ngIf="loopVote()!==application.upvote || application.upvote===0"><i class="fa fa-application-left fa-2x text-dark mr-3"></i>{{application.quote}}
+          </p>
+           
+          </div>
+          
+          <div>
+            <app-application-detail [application]='application' (isComplete)='deleteApplication($event,i)' (isUp)='addTotal($event,i)' (isDown)='adTotal($event,i)'></app-application-detail>
+            <hr class="w-75">
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+          <app-form (addQuote)= "addNewApplication($event)"></app-form>
+      </div>
+    </div>
+  </div>

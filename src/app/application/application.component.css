@@ -1,0 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Carter+One|Chewy|Righteous&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+h1{
+    font-family: 'Metal Mania', cursive;
+    color:orange;
+}
+p{
+   font-size: 20px;
+   font-family: 'Kaushan Script', cursive;
+    
+}
